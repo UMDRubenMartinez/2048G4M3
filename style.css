@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* 4 columnas de 100px */
+    grid-template-rows: repeat(4, 100px);    /* 4 filas de 100px */
+    gap: 10px;
+    margin: 20px 0;
+    background-color: #bbada0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.grid-cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc0b3;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #776e65;
+}
+
+.grid-cell.value-2 { background-color: #eee4da; color: #776e65; }
+.grid-cell.value-4 { background-color: #ede0c8; color: #776e65; }
+.grid-cell.value-8 { background-color: #f2b179; color: #f9f6f2; }
+.grid-cell.value-16 { background-color: #f59563; color: #f9f6f2; }
+.grid-cell.value-32 { background-color: #f67c5f; color: #f9f6f2; }
+.grid-cell.value-64 { background-color: #f65e3b; color: #f9f6f2; }
+.grid-cell.value-128 { background-color: #edcf72; color: #f9f6f2; font-size: 20px; }
+.grid-cell.value-256 { background-color: #edcc61; color: #f9f6f2; font-size: 20px; }
+.grid-cell.value-512 { background-color: #edc850; color: #f9f6f2; font-size: 20px; }
+.grid-cell.value-1024 { background-color: #edc53f; color: #f9f6f2; font-size: 16px; }
+.grid-cell.value-2048 { background-color: #edc22e; color: #f9f6f2; font-size: 16px; }
+
+.score-container {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#restart-button, .control-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #8f7a66;
+    color: #f9f6f2;
+    transition: background-color 0.3s ease;
+}
+#restart-button:hover, .control-button:hover {
+    background-color: #726357;
+}
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.row {
+    display: flex;
+    gap: 10px;
+}
+.control-button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
